@@ -1,0 +1,80 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="720" rx="24" fill="#0F172A"/>
+  <rect x="32" y="32" width="1216" height="656" rx="20" fill="#111827" stroke="#334155"/>
+  <text x="72" y="110" fill="#F8FAFC" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700">
+    zz-pm-workflow
+  </text>
+  <text x="72" y="152" fill="#94A3B8" font-family="Arial, Helvetica, sans-serif" font-size="24">
+    Orchestrator-first PM skill pack for Codex
+  </text>
+
+  <rect x="72" y="198" width="220" height="48" rx="24" fill="#1D4ED8"/>
+  <text x="109" y="229" fill="#EFF6FF" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">
+    15 skills
+  </text>
+  <rect x="310" y="198" width="250" height="48" rx="24" fill="#065F46"/>
+  <text x="340" y="229" fill="#ECFDF5" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">
+    3 delivery stages
+  </text>
+  <rect x="578" y="198" width="276" height="48" rx="24" fill="#5B21B6"/>
+  <text x="608" y="229" fill="#F5F3FF" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">
+    Bilingual README
+  </text>
+
+  <rect x="72" y="290" width="320" height="278" rx="20" fill="#0B1220" stroke="#1E293B"/>
+  <text x="102" y="338" fill="#E2E8F0" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">
+    Orchestrators
+  </text>
+  <text x="102" y="384" fill="#CBD5E1" font-family="Arial, Helvetica, sans-serif" font-size="22">
+    • zz-pm-workflow
+  </text>
+  <text x="102" y="420" fill="#CBD5E1" font-family="Arial, Helvetica, sans-serif" font-size="22">
+    • zz-pm-prototype-workflow
+  </text>
+  <text x="102" y="478" fill="#94A3B8" font-family="Arial, Helvetica, sans-serif" font-size="20">
+    Routes PM tasks to the right
+  </text>
+  <text x="102" y="508" fill="#94A3B8" font-family="Arial, Helvetica, sans-serif" font-size="20">
+    stage, input set, and specialist.
+  </text>
+
+  <rect x="430" y="290" width="356" height="278" rx="20" fill="#0B1220" stroke="#1E293B"/>
+  <text x="460" y="338" fill="#E2E8F0" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">
+    Specialist Skills
+  </text>
+  <text x="460" y="384" fill="#CBD5E1" font-family="Arial, Helvetica, sans-serif" font-size="22">
+    • PRD • Review • Tracking • Experiment
+  </text>
+  <text x="460" y="420" fill="#CBD5E1" font-family="Arial, Helvetica, sans-serif" font-size="22">
+    • Postmortem • Analytics • Priority
+  </text>
+  <text x="460" y="456" fill="#CBD5E1" font-family="Arial, Helvetica, sans-serif" font-size="22">
+    • Roadmap • Competitor • Survey
+  </text>
+  <text x="460" y="514" fill="#94A3B8" font-family="Arial, Helvetica, sans-serif" font-size="20">
+    Modular capabilities with clear
+  </text>
+  <text x="460" y="544" fill="#94A3B8" font-family="Arial, Helvetica, sans-serif" font-size="20">
+    boundaries instead of one oversized skill.
+  </text>
+
+  <rect x="824" y="290" width="384" height="278" rx="20" fill="#0B1220" stroke="#1E293B"/>
+  <text x="854" y="338" fill="#E2E8F0" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">
+    Prototype Subsystem
+  </text>
+  <text x="854" y="384" fill="#CBD5E1" font-family="Arial, Helvetica, sans-serif" font-size="22">
+    • HTML from image
+  </text>
+  <text x="854" y="420" fill="#CBD5E1" font-family="Arial, Helvetica, sans-serif" font-size="22">
+    • Local project from URL
+  </text>
+  <text x="854" y="456" fill="#CBD5E1" font-family="Arial, Helvetica, sans-serif" font-size="22">
+    • Pencil .pen design output
+  </text>
+  <text x="854" y="514" fill="#94A3B8" font-family="Arial, Helvetica, sans-serif" font-size="20">
+    Supports lightweight front-end,
+  </text>
+  <text x="854" y="544" fill="#94A3B8" font-family="Arial, Helvetica, sans-serif" font-size="20">
+    local prototype, and design-file delivery.
+  </text>
+</svg>

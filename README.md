@@ -3,10 +3,17 @@
 > Product management skill pack with an orchestrator-first architecture.  
 > 一套以总控技能为核心的产品管理技能包。
 
+> Codex product management skill pack for PRDs, review, analytics, roadmap planning, and prototype workflows.  
+> 面向 Codex 的产品管理技能包，覆盖 PRD、评审、数据分析、路线图规划与原型工作流。
+
 ![Stage](https://img.shields.io/badge/stages-3-blue)
 ![Skills](https://img.shields.io/badge/skills-15-success)
 ![Bilingual](https://img.shields.io/badge/README-bilingual-8A2BE2)
 ![License](https://img.shields.io/badge/license-MIT-green)
+
+| Pack Overview | Workflow Map |
+|---|---|
+| ![Pack Overview](./docs/assets/hero-overview.svg) | ![Workflow Map](./docs/assets/workflow-map.svg) |
 
 ## Quick Nav
 
