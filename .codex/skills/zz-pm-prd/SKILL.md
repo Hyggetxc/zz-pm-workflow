@@ -10,6 +10,8 @@ metadata:
 
 # 产品文档生成
 
+**EN Summary:** Generates review-ready and final PRDs from prototypes, screenshots, rules, and reference samples.
+
 本技能用于产品文档生成。保留“按业务事实落地 PRD”的能力，同时支持一个更实用的两阶段工作流：
 
 1. 先形成可评审的原型或页面方案

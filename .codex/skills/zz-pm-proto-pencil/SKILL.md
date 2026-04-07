@@ -10,6 +10,8 @@ metadata:
 
 # 截图到 Pencil 设计稿
 
+**EN Summary:** Recreates screenshots as Pencil `.pen` design files with supporting design notes.
+
 ## 定位
 
 本技能用于 `.pen` 设计稿交付，必须走 Pencil 工作流，不用 HTML 替代。

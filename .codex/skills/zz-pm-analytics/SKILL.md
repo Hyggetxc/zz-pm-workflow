@@ -10,6 +10,8 @@ metadata:
 
 # 数据分析与洞察
 
+**EN Summary:** Turns product data, funnel signals, and retention changes into actionable product insights.
+
 ## 定位
 
 本技能用于产品分析，不负责纯 BI 搭建、纯 SQL 编写或埋点设计。

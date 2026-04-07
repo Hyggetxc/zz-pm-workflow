@@ -10,6 +10,8 @@ metadata:
 
 # 竞品拆解与差异化
 
+**EN Summary:** Analyzes competitors across strategy, features, experience, and growth for differentiation decisions.
+
 ## 定位
 
 本技能用于竞品分析，不负责正式 PRD 或优先级排序。

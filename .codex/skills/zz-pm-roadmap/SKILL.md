@@ -10,6 +10,8 @@ metadata:
 
 # 版本与路线图规划
 
+**EN Summary:** Plans roadmap milestones, sequencing, dependencies, and delivery rhythm from goals and constraints.
+
 ## 定位
 
 本技能用于版本规划和里程碑编排，不负责单个需求 PRD 或具体用户调研。

@@ -10,6 +10,8 @@ metadata:
 
 # 上线与项目复盘
 
+**EN Summary:** Creates structured postmortems for launches, projects, incidents, and follow-up actions.
+
 ## 定位
 
 本技能用于复盘，不负责写 PRD、排优先级或生成周报。

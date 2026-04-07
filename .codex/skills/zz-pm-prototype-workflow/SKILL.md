@@ -10,6 +10,8 @@ metadata:
 
 # 原型工作流
 
+**EN Summary:** Main orchestrator for routing prototype requests to image, URL, or Pencil delivery paths.
+
 本技能用于原型任务总控，不直接替代具体原型执行技能。
 
 ## 工作目标

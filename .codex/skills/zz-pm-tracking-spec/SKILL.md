@@ -10,6 +10,8 @@ metadata:
 
 # 埋点方案设计
 
+**EN Summary:** Designs event tracking specs with fields, metric definitions, and QA validation checks.
+
 ## 定位
 
 本技能用于产出可执行的埋点规范，不负责做 BI 看板、SQL 查询或纯数据分析。

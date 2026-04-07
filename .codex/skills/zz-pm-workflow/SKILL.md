@@ -10,6 +10,8 @@ metadata:
 
 # 产品综合工作流
 
+**EN Summary:** Main orchestrator for routing PM tasks to the right workflow, stage, and specialist skill.
+
 本技能用于产品任务总控，不直接替代所有专项技能，而是负责：
 
 1. 判断当前任务类型

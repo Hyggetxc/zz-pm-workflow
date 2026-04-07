@@ -10,6 +10,8 @@ metadata:
 
 # 截图到 HTML 原型
 
+**EN Summary:** Recreates screenshots and mockups as editable HTML prototypes with key interactions and states.
+
 ## 定位
 
 本技能用于把截图复刻成 HTML 原型，不负责 `.pen` 设计稿交付。

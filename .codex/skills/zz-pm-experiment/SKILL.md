@@ -10,6 +10,8 @@ metadata:
 
 # A/B 实验设计
 
+**EN Summary:** Designs A/B experiments with hypotheses, variants, metrics, sample sizing, and decision rules.
+
 ## 定位
 
 本技能用于实验方案设计，不负责纯数据分析、埋点文档或 PRD 正文。

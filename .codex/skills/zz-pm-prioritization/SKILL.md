@@ -10,6 +10,8 @@ metadata:
 
 # 优先级排序
 
+**EN Summary:** Prioritizes initiatives with clear tradeoffs across goals, constraints, and scoring models.
+
 ## 定位
 
 本技能用于需求与项目优先级决策，不负责正式 PRD、详细路线图或日常排期。

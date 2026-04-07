@@ -10,6 +10,8 @@ metadata:
 
 # 调研问卷设计
 
+**EN Summary:** Designs structured research surveys from goals, target users, and decision context.
+
 ## 定位
 
 本技能用于用户调研问卷设计，不负责访谈纪要整理或纯数据分析。

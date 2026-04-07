@@ -10,6 +10,8 @@ metadata:
 
 # URL 到本地原型工程
 
+**EN Summary:** Recreates live URLs as local runnable prototype projects for further iteration and extension.
+
 ## 定位
 
 本技能用于把网页或站点参考复刻为本地原型工程，优先工程化交付。

@@ -10,6 +10,8 @@ metadata:
 
 # 多角色评审
 
+**EN Summary:** Multi-role review for PRDs, prototypes, and solution drafts before formal review.
+
 ## 定位
 
 本技能用于评审前检查，不负责重写整份 PRD，也不替代专项设计走查或代码审查。

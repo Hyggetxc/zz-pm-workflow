@@ -123,23 +123,6 @@ flowchart TD
 | 第三阶段原型子系统 | 已完成 |
 | 已落地技能数 | 15 |
 
-### 参考来源
-
-| 来源 | 对应能力 |
-|---|---|
-| `pm-review-board` | 评审 |
-| `pm-tracking-spec-writer` | 埋点 |
-| `pm-postmortem-writer` | 复盘 |
-| `pm-experiment-designer` | 实验设计 |
-| `pm-prioritization-engine` | 优先级 |
-| `pm-roadmap-planner` | 路线图 |
-| `pm-analytics` | 数据分析 |
-| `pm-competitor-deconstructor` | 竞品 |
-| `pm-survey-designer` | 问卷 |
-| `pm-image2proto` | 截图原型 |
-| `pm-image2pencil` | `.pen` 设计稿 |
-| `pm-url2proto` | URL 原型工程 |
-
 </details>
 
 ---
@@ -230,23 +213,6 @@ Default routing:
 | Phase 2 strategy and analysis skills | done |
 | Phase 3 prototype subsystem | done |
 | Implemented skills | 15 |
-
-### Source Skills
-
-This pack adapts capability boundaries from:
-
-- `pm-review-board`
-- `pm-tracking-spec-writer`
-- `pm-postmortem-writer`
-- `pm-experiment-designer`
-- `pm-prioritization-engine`
-- `pm-roadmap-planner`
-- `pm-analytics`
-- `pm-competitor-deconstructor`
-- `pm-survey-designer`
-- `pm-image2proto`
-- `pm-image2pencil`
-- `pm-url2proto`
 
 </details>
 
