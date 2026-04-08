@@ -6,6 +6,7 @@
 
 - 所有产品任务默认先走 `.codex/skills/zz-pm-workflow/SKILL.md`
 - 涉及 PRD、正式文档、按目录出文档时，由 `zz-pm-workflow` 路由到 `.codex/skills/zz-pm-prd/SKILL.md`
+- 涉及 `proposal.md`、`spec.md`、`design.md`、`tasks.md`、研发交付包、需求变更后的交付文档更新时，由 `zz-pm-workflow` 路由到 `.codex/skills/zz-pm-delivery-pack/SKILL.md`
 - 涉及原型、截图复刻、URL 复刻、`.pen` 设计稿时，由 `zz-pm-workflow` 路由到 `.codex/skills/zz-pm-prototype-workflow/SKILL.md`
 - 涉及评审、review、查漏补缺、过会前检查时，由 `zz-pm-workflow` 路由到 `.codex/skills/zz-pm-review-board/SKILL.md`
 - 涉及埋点、tracking、事件字段设计、指标口径、QA 验收时，由 `zz-pm-workflow` 路由到 `.codex/skills/zz-pm-tracking-spec/SKILL.md`

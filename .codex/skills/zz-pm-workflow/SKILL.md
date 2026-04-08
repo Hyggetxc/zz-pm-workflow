@@ -1,6 +1,6 @@
 ---
 name: zz-pm-workflow
-description: 产品综合主技能。所有产品任务默认先走本技能，由本技能判断当前是在做需求收口、原型、设计规范、PRD、评审、埋点、实验、复盘、优先级、路线图、分析、竞品或调研，并路由到对应文档或子技能；原型任务优先切到 zz-pm-prototype-workflow，写 PRD 时优先路由到 zz-pm-prd。
+description: 产品综合主技能。所有产品任务默认先走本技能，由本技能判断当前是在做需求收口、原型、设计规范、PRD、研发交付包、评审、埋点、实验、复盘、优先级、路线图、分析、竞品或调研，并路由到对应文档或子技能；原型任务优先切到 zz-pm-prototype-workflow，写 PRD 时优先路由到 zz-pm-prd。
 intent: >-
   用于承接产品相关任务的总控判断，先识别任务类型、阶段、输入优先级和目标交付物，再路由到合适的专项技能或规范文档。
 type: workflow
@@ -45,6 +45,7 @@ metadata:
 以下任务由本技能判断后再路由，不直接在本技能内完成最终产出：
 
 - 写 PRD / 生成 PRD / 按目录出文档 -> `zz-pm-prd`
+- proposal / spec / design / tasks / 研发交付包 -> `zz-pm-delivery-pack`
 - 原型 / 页面复刻 / 截图做页面 / URL 做原型 -> `zz-pm-prototype-workflow`
 - 评审 / review / 查漏补缺 / 过会前检查 -> `zz-pm-review-board`
 - 埋点 / tracking / 事件字段设计 / 指标口径 / QA 验收 -> `zz-pm-tracking-spec`
@@ -62,7 +63,7 @@ metadata:
 
 ### 0. 任务分类矩阵
 
-收到产品任务后，优先归入下列 15 类之一：
+收到产品任务后，优先归入下列 16 类之一：
 
 | 类型 | 典型输入 | 主输出 | 默认动作 |
 |---|---|---|---|
@@ -71,6 +72,7 @@ metadata:
 | 原型规划 | “这个页面怎么画”“先出结构”“原型该到什么粒度” | 页面模板、结构草稿、状态清单 | 先走原型与结构 |
 | 设计协同 | “按现有设计规范做”“这个页面风格怎么统一” | 设计输入优先级、规范清单 | 先读 `DESIGN.md` 与设计规范 |
 | PRD 产出 | “写 PRD”“生成正式版”“按目录出文档” | 初评版或正式版 PRD | 立即切到 `zz-pm-prd` |
+| 交付包产出 | “proposal/spec/design/tasks”“整理研发交付包” | 研发可开工的四件套交付物 | 立即切到 `zz-pm-delivery-pack` |
 | 评审准备 | “帮我过一遍”“查漏补缺”“这个方案能不能评审” | 风险点、补充项、检查清单 | 先列问题，不直接重写 |
 | 埋点设计 | “这个功能怎么埋点”“帮我写 tracking spec” | 事件清单、字段、口径、验收项 | 立即切到 `zz-pm-tracking-spec` |
 | 实验设计 | “帮我做 A/B 测试”“这次怎么灰度” | 假设、分组、指标、样本量、止损规则 | 立即切到 `zz-pm-experiment` |
@@ -89,16 +91,17 @@ metadata:
 3. `原型子系统`
 4. `原型规划`
 5. `设计协同`
-6. `评审准备`
-7. `埋点设计`
-8. `实验设计`
-9. `复盘总结`
-10. `优先级决策`
-11. `路线图规划`
-12. `数据分析`
-13. `竞品拆解`
-14. `问卷调研`
-15. `规范沉淀`
+6. `交付包产出`
+7. `评审准备`
+8. `埋点设计`
+9. `实验设计`
+10. `复盘总结`
+11. `优先级决策`
+12. `路线图规划`
+13. `数据分析`
+14. `竞品拆解`
+15. `问卷调研`
+16. `规范沉淀`
 
 ### 1. 先判断任务类型
 
@@ -109,16 +112,17 @@ metadata:
 3. 当前是不是 `截图 / URL / .pen / 页面复刻类原型任务`
 4. 当前是不是 `原型结构 / 页面模板 / 状态覆盖`
 5. 当前是不是 `设计规范 / DESIGN.md / 可视化规范资产协同`
-6. 当前是不是 `评审 / review / 过会前检查`
-7. 当前是不是 `埋点 / tracking / 字段和指标口径设计`
-8. 当前是不是 `A/B 测试 / 实验设计 / 灰度验证 / 样本量估算`
-9. 当前是不是 `复盘 / postmortem / RCA / 上线总结`
-10. 当前是不是 `优先级 / RICE / ICE / Kano / 取舍`
-11. 当前是不是 `roadmap / 版本规划 / 里程碑 / 依赖编排`
-12. 当前是不是 `数据分析 / 漏斗 / 留存 / 指标异常`
-13. 当前是不是 `竞品分析 / 对标 / 差异化`
-14. 当前是不是 `问卷 / survey / 满意度 / 调研设计`
-15. 当前是不是 `回写 / 规范沉淀`
+6. 当前是不是 `proposal / spec / design / tasks / 研发交付包`
+7. 当前是不是 `评审 / review / 过会前检查`
+8. 当前是不是 `埋点 / tracking / 字段和指标口径设计`
+9. 当前是不是 `A/B 测试 / 实验设计 / 灰度验证 / 样本量估算`
+10. 当前是不是 `复盘 / postmortem / RCA / 上线总结`
+11. 当前是不是 `优先级 / RICE / ICE / Kano / 取舍`
+12. 当前是不是 `roadmap / 版本规划 / 里程碑 / 依赖编排`
+13. 当前是不是 `数据分析 / 漏斗 / 留存 / 指标异常`
+14. 当前是不是 `竞品分析 / 对标 / 差异化`
+15. 当前是不是 `问卷 / survey / 满意度 / 调研设计`
+16. 当前是不是 `回写 / 规范沉淀`
 
 ### 2. 按类型读取文档
 
@@ -143,6 +147,8 @@ metadata:
 
 - `写 PRD / 生成 PRD / 初评版 PRD / 正式版 PRD / 按目录出文档`
   - 路由到 `zz-pm-prd`
+- `proposal / spec / design / tasks / 研发交付包 / 需求变更后的交付文档更新`
+  - 路由到 `zz-pm-delivery-pack`
 - `原型 / 截图复刻 / URL 复刻 / .pen / 页面复刻`
   - 路由到 `zz-pm-prototype-workflow`
 - `评审 / review / 查漏补缺 / 过会 / 评审前检查`
@@ -171,6 +177,7 @@ metadata:
 以下情况不应继续停留在本技能内：
 
 - 用户明确要求 `PRD`、`正式版文档`、`初评版文档`
+- 用户明确要求 `proposal`、`spec`、`design`、`tasks`、`研发交付包`
 - 用户明确要求 `原型`、`截图做页面`、`URL 复刻`、`.pen`
 - 用户要求按目录、按模板、按截图或按原型输出正式文档
 - 用户要求本地 `docx` 交付
@@ -185,7 +192,7 @@ metadata:
 - 用户明确要求 `问卷设计`、`survey`、`NPS`、`满意度调研`
 
 这些场景必须切到对应子技能，不要继续停留在本技能里输出通用建议。
-评审类任务切到 `zz-pm-review-board`，埋点类任务切到 `zz-pm-tracking-spec`，实验类任务切到 `zz-pm-experiment`，复盘类任务切到 `zz-pm-postmortem`，优先级类任务切到 `zz-pm-prioritization`，路线图类任务切到 `zz-pm-roadmap`，分析类任务切到 `zz-pm-analytics`，竞品类任务切到 `zz-pm-competitor`，问卷类任务切到 `zz-pm-survey`，原型类任务切到 `zz-pm-prototype-workflow`，文档交付类任务切到 `zz-pm-prd`。
+评审类任务切到 `zz-pm-review-board`，埋点类任务切到 `zz-pm-tracking-spec`，实验类任务切到 `zz-pm-experiment`，复盘类任务切到 `zz-pm-postmortem`，优先级类任务切到 `zz-pm-prioritization`，路线图类任务切到 `zz-pm-roadmap`，分析类任务切到 `zz-pm-analytics`，竞品类任务切到 `zz-pm-competitor`，问卷类任务切到 `zz-pm-survey`，原型类任务切到 `zz-pm-prototype-workflow`，`PRD` 类任务切到 `zz-pm-prd`，研发交付包类任务切到 `zz-pm-delivery-pack`。
 
 未命中子技能时，本技能负责输出：
 
@@ -194,7 +201,7 @@ metadata:
 - 当前应先补什么输入
 - 当前为什么不应直接进入 PRD 或原型
 
-## 与 zz-pm-prd 的边界
+## 与 zz-pm-prd、zz-pm-delivery-pack 的边界
 
 `zz-pm-workflow` 负责：
 
@@ -210,10 +217,20 @@ metadata:
 - 模板套用
 - PRD 自检和交付
 
+`zz-pm-delivery-pack` 负责：
+
+- `proposal.md`
+- `spec.md`
+- `design.md`
+- `tasks.md`
+- 需求变更后的交付包增量更新
+
 规则：
 
 - 不在本技能里直接写完整 PRD
+- 不在本技能里直接写研发交付四件套
 - 一旦确认任务进入 PRD 阶段，立即切换到 `zz-pm-prd`
+- 一旦确认任务进入研发交付包阶段，立即切换到 `zz-pm-delivery-pack`
 
 ## 输出要求
 
