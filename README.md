@@ -63,7 +63,7 @@
 
 | Skill | 作用 | 可以做什么 | 典型场景 |
 |---|---|---|---|
-| [`zz-pm-prd`](./.codex/skills/zz-pm-prd/SKILL.md) | PRD 文档生成 | 基于原型、截图、规则和样例输出初评版或正式版 PRD | 当你已经有原型、截图或页面方案，准备把它写成正式需求文档时会触发。<br>当你需要先出初评版 PRD，再收敛成正式版时会触发。<br>当你明确要求“按目录写 PRD”或“生成正式版需求文档”时会触发。 |
+| [`zz-pm-prd`](./.codex/skills/zz-pm-prd/SKILL.md) | PRD 文档生成 | 基于原型、截图、规则和样例输出正式版 PRD | 当你已经有原型、截图或页面方案，准备把它写成正式需求文档时会触发。<br>当你需要在 OpenSpec 主流程之外补充一份正式 PRD 时会触发。<br>当你明确要求“按目录写 PRD”或“生成正式版需求文档”时会触发。 |
 | [`zz-pm-delivery-pack`](./.codex/skills/zz-pm-delivery-pack/SKILL.md) | 研发交付包生成 | 基于已确认 PRD、评审结论和原型输出 `proposal/spec/design/tasks` 四件套 | 当 PRD 已评审通过，下一步要把内容整理成研发可开工的 `proposal/spec/design/tasks` 时会触发。<br>当你不想让前后端只拿到一份 PRD，而是要拿到结构化交付包时会触发。<br>当需求变更后，你已经更新了 PRD，并需要按影响范围同步更新交付文档时会触发。 |
 | [`zz-pm-review-board`](./.codex/skills/zz-pm-review-board/SKILL.md) | 多角色评审 | 从产品、研发、测试、设计、运营、合规视角查漏补缺 | 当你准备开评审会，想先检查方案是否有明显缺口时会触发。<br>当你想从研发、测试、设计或运营多个视角一起看风险时会触发。<br>当你明确要求“帮我 review 一下”或“这个方案能不能过评审”时会触发。 |
 
